@@ -1,8 +1,9 @@
 # Import necessary libraries
-from flask import Flask, render_template, Response
 import cv2
 
 # Initialize the Flask app
+from flask import Flask, Response
+
 app = Flask(__name__)
 
 camera = cv2.VideoCapture(0)
